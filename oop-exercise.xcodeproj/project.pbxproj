@@ -12,6 +12,8 @@
 		94003C4F1C90D71800B74756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94003C4D1C90D71800B74756 /* Main.storyboard */; };
 		94003C511C90D71800B74756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94003C501C90D71800B74756 /* Assets.xcassets */; };
 		94003C541C90D71800B74756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94003C521C90D71800B74756 /* LaunchScreen.storyboard */; };
+		94003C5D1C90E4EE00B74756 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 94003C5B1C90E4EE00B74756 /* btn.wav */; };
+		94003C5E1C90E4EE00B74756 /* purple-heaven.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94003C5C1C90E4EE00B74756 /* purple-heaven.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		94003C501C90D71800B74756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94003C531C90D71800B74756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94003C551C90D71800B74756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94003C5B1C90E4EE00B74756 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		94003C5C1C90E4EE00B74756 /* purple-heaven.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "purple-heaven.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				94003C501C90D71800B74756 /* Assets.xcassets */,
 				94003C521C90D71800B74756 /* LaunchScreen.storyboard */,
 				94003C551C90D71800B74756 /* Info.plist */,
+				94003C5B1C90E4EE00B74756 /* btn.wav */,
+				94003C5C1C90E4EE00B74756 /* purple-heaven.mp3 */,
 			);
 			path = "oop-exercise";
 			sourceTree = "<group>";
@@ -124,8 +130,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94003C541C90D71800B74756 /* LaunchScreen.storyboard in Resources */,
+				94003C5E1C90E4EE00B74756 /* purple-heaven.mp3 in Resources */,
 				94003C511C90D71800B74756 /* Assets.xcassets in Resources */,
 				94003C4F1C90D71800B74756 /* Main.storyboard in Resources */,
+				94003C5D1C90E4EE00B74756 /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
