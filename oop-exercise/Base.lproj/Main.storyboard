@@ -67,11 +67,36 @@
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3Z-ix-nOv">
+                                <rect key="frame" x="82.5" y="32" width="52" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tev-3X-gHt">
+                                <rect key="frame" x="466" y="31" width="52" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fight!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szW-Oc-gnf">
+                                <rect key="frame" x="137" y="555" width="326" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="G89-6t-MvS"/>
+                                    <constraint firstAttribute="height" constant="21" id="JdQ-47-i3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.16949329062554286" green="0.14319441338955019" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="szW-Oc-gnf" firstAttribute="centerX" secondItem="bLG-ic-ApO" secondAttribute="centerX" id="0HQ-tJ-3am"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uLm-KH-vmw" secondAttribute="bottom" id="4mZ-50-ECP"/>
+                            <constraint firstItem="szW-Oc-gnf" firstAttribute="centerY" secondItem="bLG-ic-ApO" secondAttribute="centerY" id="8ds-Vv-4WV"/>
                             <constraint firstItem="Lfy-70-i25" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DSO-72-F6n"/>
+                            <constraint firstItem="Tev-3X-gHt" firstAttribute="centerY" secondItem="bfp-05-Xey" secondAttribute="centerY" id="GqO-Ta-pu3"/>
                             <constraint firstItem="bfp-05-Xey" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HIG-ti-CTg"/>
                             <constraint firstItem="iLF-HV-TZP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ocl-LD-xID"/>
                             <constraint firstItem="uLm-KH-vmw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PAC-pX-cfQ"/>
@@ -84,9 +109,12 @@
                             <constraint firstAttribute="trailing" secondItem="uLm-KH-vmw" secondAttribute="trailing" id="bSo-YH-kh4"/>
                             <constraint firstItem="iLF-HV-TZP" firstAttribute="top" secondItem="4Ie-am-MlL" secondAttribute="bottom" id="fbj-jD-lC7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iLF-HV-TZP" secondAttribute="bottom" id="oJB-eN-P8e"/>
+                            <constraint firstItem="W3Z-ix-nOv" firstAttribute="centerX" secondItem="56L-8i-47J" secondAttribute="centerX" id="rYK-xl-AAK"/>
                             <constraint firstItem="Lfy-70-i25" firstAttribute="centerX" secondItem="bfp-05-Xey" secondAttribute="centerX" id="tKx-Sy-jjq"/>
+                            <constraint firstItem="Tev-3X-gHt" firstAttribute="centerX" secondItem="bfp-05-Xey" secondAttribute="centerX" id="uED-4o-DJe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bLG-ic-ApO" secondAttribute="bottom" constant="8" id="yxx-dB-dqE"/>
                             <constraint firstItem="56L-8i-47J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="z5Z-x4-Xp0"/>
+                            <constraint firstItem="W3Z-ix-nOv" firstAttribute="centerY" secondItem="56L-8i-47J" secondAttribute="centerY" id="zcH-X6-twK"/>
                         </constraints>
                     </view>
                 </viewController>
