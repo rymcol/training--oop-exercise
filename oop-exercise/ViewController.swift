@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         do {
             try buttonSound = AVAudioPlayer(contentsOfURL: buttonAudioURL!)
             buttonSound.prepareToPlay()
-            buttonSound.volume = 0.25
+            buttonSound.volume = 0.2
         } catch let error as NSError {
             print(error.description)
         }
