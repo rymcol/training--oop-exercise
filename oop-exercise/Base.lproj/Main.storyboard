@@ -57,10 +57,10 @@
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
                                 <connections>
-                                    <action selector="leftAttackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9o-qb-JBh"/>
+                                    <action selector="attackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4e-f0-kR0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfp-05-Xey">
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfp-05-Xey">
                                 <rect key="frame" x="431" y="25" width="123" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="G7X-Ml-Brb"/>
@@ -70,7 +70,7 @@
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
                                 <connections>
-                                    <action selector="rightAttackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZpH-qg-aea"/>
+                                    <action selector="attackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jg7-JF-zkE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3Z-ix-nOv">
