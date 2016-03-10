@@ -37,6 +37,12 @@ class ViewController: UIViewController {
         
         buttonSound.play()
         
+        if sender.tag == 0 {
+            hudLabel.text = "Player 1 Attacked!"
+        } else {
+            hudLabel.text = "Player 2 Attacked!"
+        }
+        
     }
 
 
