@@ -61,13 +61,14 @@ class ViewController: UIViewController {
             button = rightButton
         }
         
-        swapButtonHiddenState(button)
-        
+        hideButton(button)
+    
         NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.swapButtonHiddenStateWithTimer(_:)), userInfo: button, repeats: false)
-        
+    
         if game.performAttackAndCheckForDeath(game.players[sender.tag], defender: game.players[defender]) {
             //Death
-            hudLabel.text = "Player \(game.players[defender].name) Died"
+            hudLabel.text = "Player \(game.players[defender].name) Died. \(game.players[sender.tag].name) Won!"
+            changeAllAttackButtonsState(true)
             leftPlayerImage.hidden = true; rightPlayerImage.hidden = true;
             resetButton.hidden = false
             resetButtonLabel.hidden = false
@@ -81,9 +82,12 @@ class ViewController: UIViewController {
     
     @IBAction func resetTapped(sender: AnyObject) {
         resetGame()
+        if leftButtonLabel.hidden == true || leftButton.hidden == true || rightButtonLabel.hidden == true || rightButton.hidden == true {
+            changeAllAttackButtonsState(false)
+        }
     }
     
-    func swapButtonHiddenState (button: UIButton) {
+    func hideButton (button: UIButton) {
         
         let labelToHide: UILabel
         
@@ -92,14 +96,9 @@ class ViewController: UIViewController {
         } else {
             labelToHide = rightButtonLabel
         }
-        
-        if button.hidden == true {
-            button.hidden = false
-            labelToHide.hidden = false
-        } else {
-            button.hidden = true
-            labelToHide.hidden = true
-        }
+
+        button.hidden = true
+        labelToHide.hidden = true
     }
     
     func swapButtonHiddenStateWithTimer (timer: NSTimer) {
@@ -114,13 +113,9 @@ class ViewController: UIViewController {
             labelToHide = rightButtonLabel
         }
         
-        if button.hidden == true {
-            button.hidden = false
-            labelToHide.hidden = false
-        } else {
-            button.hidden = true
-            labelToHide.hidden = true
-        }
+        button.hidden = false
+        labelToHide.hidden = false
+
     }
     
     func resetGame() {
@@ -129,6 +124,20 @@ class ViewController: UIViewController {
         resetButtonLabel.hidden = true
         leftPlayerImage.hidden = false; rightPlayerImage.hidden = false;
         hudLabel.text = "Fight!"
+    }
+    
+    func changeAllAttackButtonsState (hidden: Bool) {
+        if hidden == true {
+            leftButtonLabel.hidden = true
+            leftButton.hidden = true
+            rightButtonLabel.hidden = true
+            rightButton.hidden = true
+        } else {
+            leftButtonLabel.hidden = false
+            leftButton.hidden = false
+            rightButtonLabel.hidden = false
+            rightButton.hidden = false
+        }
     }
 
 
