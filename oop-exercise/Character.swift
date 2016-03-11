@@ -26,11 +26,18 @@ class Character {
         }
     }
     
+    var isAlive: Bool {
+        if _health >= 0 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     init (name: String, health: Int, attackPower: Int) {
         self.name = name
         self._health = health
         self._attackPower = attackPower
     }
-    
     
 }

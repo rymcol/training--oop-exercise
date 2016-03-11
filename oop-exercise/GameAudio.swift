@@ -41,4 +41,10 @@ class GameAudio {
         }
     }
     
+    func stop() {
+        if let player = audio {
+            player.pause()
+        }
+    }
+    
 }

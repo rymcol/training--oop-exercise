@@ -125,7 +125,9 @@
                     </view>
                     <connections>
                         <outlet property="hudLabel" destination="szW-Oc-gnf" id="2xa-kz-wYw"/>
+                        <outlet property="leftButton" destination="56L-8i-47J" id="9B4-gE-6ZA"/>
                         <outlet property="leftPlayerImage" destination="4Ie-am-MlL" id="6a1-sh-Rbf"/>
+                        <outlet property="rightButton" destination="bfp-05-Xey" id="KbZ-rg-ZdI"/>
                         <outlet property="rightPlayerImage" destination="Lfy-70-i25" id="HWT-ad-dOK"/>
                     </connections>
                 </viewController>
