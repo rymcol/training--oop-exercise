@@ -29,4 +29,9 @@ class Game {
         }
     }
     
+    func resetGame() {
+        self.player1._health = 100
+        self.player2._health = 80
+    }
+    
 }

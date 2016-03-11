@@ -14,7 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var rightPlayerImage: UIImageView!
     @IBOutlet weak var hudLabel: UILabel!
     @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var leftButtonLabel: UILabel!
     @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var rightButtonLabel: UILabel!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var resetButtonLabel: UILabel!
+    
     
     var backgroundAudio: GameAudio!
     var buttonSound: GameAudio!
@@ -64,6 +69,8 @@ class ViewController: UIViewController {
             //Death
             hudLabel.text = "Player \(game.players[defender].name) Died"
             leftPlayerImage.hidden = true; rightPlayerImage.hidden = true;
+            resetButton.hidden = false
+            resetButtonLabel.hidden = false
         } else {
             //Still Alive
             hudLabel.text = "Player \(game.players[defender].name) Lived"
@@ -71,11 +78,27 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func resetTapped(sender: AnyObject) {
+        resetGame()
+    }
+    
     func swapButtonHiddenState (button: UIButton) {
+        
+        let labelToHide: UILabel
+        
+        if button == leftButton {
+            labelToHide = leftButtonLabel
+        } else {
+            labelToHide = rightButtonLabel
+        }
+        
         if button.hidden == true {
             button.hidden = false
+            labelToHide.hidden = false
         } else {
             button.hidden = true
+            labelToHide.hidden = true
         }
     }
     
@@ -83,11 +106,29 @@ class ViewController: UIViewController {
         
         let button = timer.userInfo! as! UIButton
         
+        let labelToHide: UILabel
+        
+        if button == leftButton {
+            labelToHide = leftButtonLabel
+        } else {
+            labelToHide = rightButtonLabel
+        }
+        
         if button.hidden == true {
             button.hidden = false
+            labelToHide.hidden = false
         } else {
             button.hidden = true
+            labelToHide.hidden = true
         }
+    }
+    
+    func resetGame() {
+        game.resetGame()
+        resetButton.hidden = true
+        resetButtonLabel.hidden = true
+        leftPlayerImage.hidden = false; rightPlayerImage.hidden = false;
+        hudLabel.text = "Fight!"
     }
 
 

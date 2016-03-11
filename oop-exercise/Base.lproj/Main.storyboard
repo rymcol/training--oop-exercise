@@ -60,6 +60,20 @@
                                     <action selector="attackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4e-f0-kR0"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iue-am-q2q">
+                                <rect key="frame" x="239" y="28" width="123" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9bS-QE-x4b"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="iCt-YI-UgO"/>
+                                    <constraint firstAttribute="width" constant="123" id="rur-mM-NXS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="sfM-It-u8H"/>
+                                </constraints>
+                                <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="attackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVt-vQ-p6y"/>
+                                    <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laL-w4-iAo"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfp-05-Xey">
                                 <rect key="frame" x="431" y="25" width="123" height="44"/>
                                 <constraints>
@@ -73,8 +87,12 @@
                                     <action selector="attackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jg7-JF-zkE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3Z-ix-nOv">
-                                <rect key="frame" x="82.5" y="37" width="52" height="20.5"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXl-7Y-FzY">
+                                <rect key="frame" x="250" y="39" width="100" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cXU-uN-arA"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="h93-tL-lYd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -95,6 +113,12 @@
                                 <color key="textColor" red="0.16949329062554286" green="0.14319441338955019" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3Z-ix-nOv">
+                                <rect key="frame" x="82" y="36" width="52" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -104,15 +128,19 @@
                             <constraint firstItem="Lfy-70-i25" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DSO-72-F6n"/>
                             <constraint firstItem="Tev-3X-gHt" firstAttribute="centerY" secondItem="bfp-05-Xey" secondAttribute="centerY" id="GqO-Ta-pu3"/>
                             <constraint firstItem="bfp-05-Xey" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="HIG-ti-CTg"/>
+                            <constraint firstItem="iue-am-q2q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="LNp-Wd-nH0"/>
                             <constraint firstItem="iLF-HV-TZP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ocl-LD-xID"/>
                             <constraint firstItem="uLm-KH-vmw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PAC-pX-cfQ"/>
+                            <constraint firstItem="iue-am-q2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qx4-Az-GoG"/>
                             <constraint firstItem="4Ie-am-MlL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QyI-NT-uDb"/>
                             <constraint firstItem="bLG-ic-ApO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RCR-Bc-u5k"/>
                             <constraint firstItem="iLF-HV-TZP" firstAttribute="top" secondItem="Lfy-70-i25" secondAttribute="bottom" id="SLS-lw-8iR"/>
                             <constraint firstAttribute="trailing" secondItem="iLF-HV-TZP" secondAttribute="trailing" id="TPE-5c-PfA"/>
                             <constraint firstItem="4Ie-am-MlL" firstAttribute="centerX" secondItem="56L-8i-47J" secondAttribute="centerX" id="UwZ-Y6-kNd"/>
                             <constraint firstItem="uLm-KH-vmw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XT7-yX-AxS"/>
+                            <constraint firstItem="UXl-7Y-FzY" firstAttribute="centerX" secondItem="iue-am-q2q" secondAttribute="centerX" id="Xos-0a-Jh0"/>
                             <constraint firstAttribute="trailing" secondItem="uLm-KH-vmw" secondAttribute="trailing" id="bSo-YH-kh4"/>
+                            <constraint firstItem="UXl-7Y-FzY" firstAttribute="centerY" secondItem="iue-am-q2q" secondAttribute="centerY" id="dDC-Ue-x1Z"/>
                             <constraint firstItem="iLF-HV-TZP" firstAttribute="top" secondItem="4Ie-am-MlL" secondAttribute="bottom" id="fbj-jD-lC7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iLF-HV-TZP" secondAttribute="bottom" id="oJB-eN-P8e"/>
                             <constraint firstItem="W3Z-ix-nOv" firstAttribute="centerX" secondItem="56L-8i-47J" secondAttribute="centerX" id="rYK-xl-AAK"/>
@@ -126,11 +154,26 @@
                     <connections>
                         <outlet property="hudLabel" destination="szW-Oc-gnf" id="2xa-kz-wYw"/>
                         <outlet property="leftButton" destination="56L-8i-47J" id="9B4-gE-6ZA"/>
+                        <outlet property="leftButtonLabel" destination="W3Z-ix-nOv" id="ba2-WX-vtb"/>
                         <outlet property="leftPlayerImage" destination="4Ie-am-MlL" id="6a1-sh-Rbf"/>
+                        <outlet property="resetButton" destination="iue-am-q2q" id="d4r-zg-zuf"/>
+                        <outlet property="resetButtonLabel" destination="UXl-7Y-FzY" id="xWu-O7-SH0"/>
                         <outlet property="rightButton" destination="bfp-05-Xey" id="KbZ-rg-ZdI"/>
+                        <outlet property="rightButtonLabel" destination="Tev-3X-gHt" id="5H2-Lm-XtW"/>
                         <outlet property="rightPlayerImage" destination="Lfy-70-i25" id="HWT-ad-dOK"/>
                     </connections>
                 </viewController>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O21-Wk-5MY">
+                    <rect key="frame" x="0.0" y="0.0" width="123" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="123" id="D0h-yM-sVi"/>
+                        <constraint firstAttribute="height" constant="44" id="ZEa-aY-hcL"/>
+                    </constraints>
+                    <state key="normal" image="player1attackbtn"/>
+                    <connections>
+                        <action selector="attackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4y-mB-Fbh"/>
+                    </connections>
+                </button>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="318"/>
